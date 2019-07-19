@@ -12,7 +12,6 @@ def test(y_test, y_pred):
     FN = cm[1, 0]
     TP = cm[1, 1]
     precision = TP / float(TP + FP)
-
     return acc, cm, FP, FN, TP, TN, precision
 
 def timer(model, train_loader, num_epochs=2):
