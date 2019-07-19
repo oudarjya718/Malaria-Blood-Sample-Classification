@@ -21,7 +21,7 @@ def timer(model, train_loader, num_epochs=2):
         #training takes place
         time_after = time.time()
         time_taken = float((time_after - time_before)/60)
-        print("Time taken for epoch is: {0}".format(time_taken))
+        print("Time taken for epoch is: {0} minutes".format(time_taken))
         total_time += time_taken
     avg_time = total_time/num_epochs
     return avg_time
